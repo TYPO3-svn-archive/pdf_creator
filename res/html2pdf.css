@@ -1,0 +1,18 @@
+@media print {
+#tohide { display:none; }
+}
+
+/*@media all {*/
+#sidecol { width:auto !important; }
+.end_note h1 { margin:0 0 0.8em 0; }
+/*}*/
+
+.end_note {
+  width: 200px;
+  overflow: hidden;
+  padding: 5px 0 0 10px;
+  background: url(/fileadmin/templates/images/layout/side_item.jpg) no-repeat left top;
+  margin: 20px 10px 0 0;
+  float: left;
+}
+.csc-textpic-single-image { page-break-inside: avoid; }

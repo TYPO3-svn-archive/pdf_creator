@@ -1,0 +1,8 @@
+# cat=basic//1; type=boolean; label=simulateStaticPdf: If set PDF-Links are generated as <alias>.pdf
+# simulateStaticPdf = 0
+
+# cat=basic//2; type=boolean; label=Disable gzip compression: Disables the additional gzip compression for the generated PDF's (in case it is turned on in the gloabl configuration). This option is generally desirable since PDF-files supply their own compression and some browsers have problems with addionally compressed PDFs.
+disableGzipForPdf = 1
+
+# cat=basic//3; type=int+; label=type ID: the type ID for the pdf page
+typeNum = 123

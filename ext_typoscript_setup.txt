@@ -1,0 +1,52 @@
+includeLibs.tx_pdfcreator = EXT:pdf_creator/class.tx_pdfcreator.php
+
+pdf_creator = PAGE
+pdf_creator {
+
+  50 = CONTENT
+  50 < styles.content.get
+
+  typeNum = {$extension.pdf_creator.typeNum}
+  config.pageGenScript = EXT:pdf_creator/gen_pdf.php
+  config.admPanel = 0
+  config.xhtml_cleaning = 0
+  config.USERNAME_substToken =
+  config.ftu = 0
+  config.disableCharsetHeader = 1
+  config.prefixLocalAnchors = 0
+
+  config.pdf_creator.browserwidth = {$pdf_creator.browserwidth}
+  config.pdf_creator.size = {$pdf_creator.size}
+  config.pdf_creator.landscape = {$pdf_creator.landscape}
+  config.pdf_creator.renderlinks = {$pdf_creator.renderlinks}
+  config.pdf_creator.renderfields = {$pdf_creator.renderfields}
+  config.pdf_creator.renderforms = {$pdf_creator.renderforms}
+  config.pdf_creator.pdfversion = {$pdf_creator.pdfversion}
+  config.pdf_creator.cssmedia = {$pdf_creator.cssmedia}
+  config.pdf_creator.use_pdflib = {$pdf_creator.use_pdflib}
+  config.pdf_creator.js = {$pdf_creator.js}
+  
+  config.pdf_creator.top = {$pdf_creator.top}
+  config.pdf_creator.bottom = {$pdf_creator.bottom}
+  config.pdf_creator.left = {$pdf_creator.left}
+  config.pdf_creator.right = {$pdf_creator.right}
+
+  config.pdf_creator.string_search1 = {$pdf_creator.string_search1}
+  config.pdf_creator.string_replace1 = {$pdf_creator.string_replace1}
+  config.pdf_creator.string_search2 = {$pdf_creator.string_search2}
+  config.pdf_creator.string_replace2 = {$pdf_creator.string_replace2}
+  config.pdf_creator.string_search3 = {$pdf_creator.string_search3}
+  config.pdf_creator.string_replace3 = {$pdf_creator.string_replace3}
+  config.pdf_creator.string_search4 = {$pdf_creator.string_search4}
+  config.pdf_creator.string_replace4 = {$pdf_creator.string_replace4}
+
+  config.pdf_creator.regexp_search1 = {$pdf_creator.regexp_search1}
+  config.pdf_creator.regexp_replace1 = {$pdf_creator.regexp_replace1}
+  config.pdf_creator.regexp_search2 = {$pdf_creator.regexp_search2}
+  config.pdf_creator.regexp_replace2 = {$pdf_creator.regexp_replace2}
+  config.pdf_creator.regexp_search3 = {$pdf_creator.regexp_search3}
+  config.pdf_creator.regexp_replace3 = {$pdf_creator.regexp_replace3}
+  config.pdf_creator.regexp_search4 = {$pdf_creator.regexp_search4}
+  config.pdf_creator.regexp_replace4 = {$pdf_creator.regexp_replace4}
+
+}
